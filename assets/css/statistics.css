@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dctx {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.limits {
+  padding: 10vw;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 30;
+}
+
+span,
+.inp,
+.select {
+  width: 26.67vw;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.sctx {
+  width: 90vw;
+}

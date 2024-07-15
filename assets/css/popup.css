@@ -1,0 +1,60 @@
+body {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e1116;
+}
+
+@font-face {
+  font-family: "digital-watch-font";
+  src: url("../font/digital-7 (mono).ttf") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+.time-used {
+  display: flex;
+  height: fit-content;
+  color: white;
+}
+
+.time-unit {
+  font-size: 3em;
+  font-family: "digital-watch-font", sans-serif;
+}
+
+.true-limit {
+  color: red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.time-unit.second {
+  font-size: 2em;
+}
+
+div#statisticsButton {
+  border: 2px solid #32363c;
+  padding: 6px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+}
+
+div#statisticsButton:hover {
+  color: white;
+  background-color: #23262c;
+}
